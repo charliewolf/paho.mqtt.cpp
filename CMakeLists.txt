@@ -57,7 +57,7 @@ if(PAHO_WITH_MQTT_C)
   set(PAHO_ENABLE_TESTING FALSE CACHE BOOL "No Paho C tests")
   set(PAHO_HIGH_PERFORMANCE TRUE CACHE BOOL "Paho C high performance")
 
-  add_subdirectory(${PROJECT_SOURCE_DIR}/externals/paho-mqtt-c)
+  add_subdirectory(${PROJECT_SOURCE_DIR}/src/externals/paho-mqtt-c)
 
   ## Alias namespace so that the full names can be used with the subdir.
   if(PAHO_BUILD_SHARED)
@@ -160,5 +160,4 @@ endif()
 
 include(CPack)
 
-add_subdirectory(cmake)
 
